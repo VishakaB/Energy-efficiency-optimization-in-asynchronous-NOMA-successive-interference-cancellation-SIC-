@@ -30,25 +30,25 @@ conv1= (34.6519,
 5.8075,
 5.841)
 
-proposed1 = ( 47.7924,
-   43.8002,
-   39.1860,
-   35.2919,
-   31.7867,
-   28.7657,
-   26.6518,
-   24.8960,
-   23.4058,
-   22.1201,
-   20.9961,
-   19.9830,
-   19.0800,
-   18.2915,
-   17.6251,
-   17.0884,
-   16.7288,
-   16.4213,
-   16.3506,
+proposed1 = (47.7924,
+   43.8652,
+   40.2693,
+   36.7923,
+   33.6317,
+   30.7954,
+   28.3236,
+   26.2035,
+   24.4063,
+   22.8882,
+   21.6032,
+   20.5103,
+   19.5788,
+   18.7857,
+   18.1178,
+   17.6323,
+   17.3032,
+   17.0178,
+   17.0175,
 )
 
 
@@ -138,10 +138,10 @@ f, ax1 = plt.subplots()
 ax1.grid(color='gray', alpha=0.5, linestyle='dashed', linewidth=0.5)
 
 #legend
-lns5 = ax1.plot(time, prop3, color="black",marker="d", markersize=3, label=r'sequential T-SIC received ratio = 2')
-lns6= ax1.plot(time, conv1,color="peru",marker="d",linestyle='dashed', markersize=3,  label=r'conv T-SIC received ratio = 2')
+lns5 = ax1.plot(time, prop3, color="black",marker="p", markersize=5, label=r'sequential T-SIC received ratio = 2')
+lns6= ax1.plot(time, conv3,color="peru",marker="p",linestyle='dashed', markersize=5,  label=r'conv T-SIC received ratio = 2')
 lns7 = ax1.plot(time, prop2, color="black",marker="x", markersize=5, label=r'sequential T-SIC received ratio = 5')
-lns8= ax1.plot(time, conv1,color="peru",marker="x",linestyle='dashed', markersize=5,  label=r'conv T-SIC received ratio = 5')
+lns8= ax1.plot(time, conv2,color="peru",marker="x",linestyle='dashed', markersize=5,  label=r'conv T-SIC received ratio = 5')
 lns1 = ax1.plot(time, proposed1, color="black",marker=".", markersize=4, label=r'sequential T-SIC received ratio = 10')
 lns2 = ax1.plot(time, conv1,color="peru",marker=".",linestyle='dashed', markersize=5,  label=r'conv T-SIC received ratio = 10' )
 
@@ -160,7 +160,7 @@ for tick in ax1.get_xticklabels():
     tick.set_fontname("Arial")
 for tick in ax1.get_yticklabels():
     tick.set_fontname("Arial")
-ax1.set_ylim(0.1,50)  # most of the data
+ax1.set_ylim(4,50)  # most of the data
 ax1.set_xlim(1, 20.5)  # most of the data
 ax1.tick_params(axis='both', which='major', labelsize=11)
 plt.text(1.5,200.0,'# emergency devices: 340',fontsize=13,fontname="Arial")

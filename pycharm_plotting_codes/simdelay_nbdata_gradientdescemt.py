@@ -103,5 +103,8 @@ ax1.tick_params(axis='both', which='major', labelsize=11)
 plt.text(1.5,200.0,'# emergency devices: 340',fontsize=13,fontname="Arial")
 plt.text(1.5,205.0,'emergency duration: 30 mins',fontsize=13,fontname="Arial")
 plt.xlabel(r"Total number of transmitters ($K$)",fontname="Arial",fontsize=14)
-plt.ylabel(r"Total simulation delay (sec)",fontname="Arial",fontsize=14)
+plt.ylabel(r"Total simulation $delay^*$ (sec)",fontname="Arial",fontsize=14)
+
+plt.figtext(0.05, 0.01, r'$^*$ With respect to the processing delay of the computer used',fontsize=9)
+
 plt.show()

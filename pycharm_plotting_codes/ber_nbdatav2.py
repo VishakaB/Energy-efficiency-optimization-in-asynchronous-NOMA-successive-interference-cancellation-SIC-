@@ -144,8 +144,8 @@ ax1.grid(color='gray', alpha=0.5, linestyle='dashed', linewidth=0.5)
 
 #legend
 #strongest user
-lns1 = ax1.plot(time, proposed, color="black",marker=".", markersize=3, label=r'sequential T-SIC (nearest user)')
-lns2 = ax1.plot(time, conv,color="peru",marker="d",linestyle='dashed', markersize=7,  label=r'conv T-SIC (nearest user)')
+lns1 = ax1.plot(time, proposed, color="black",marker=".", markersize=3, label=r'sequential T-SIC')
+lns2 = ax1.plot(time, conv,color="peru",marker="d",linestyle='dashed', markersize=7,  label=r'conv T-SIC')
 
 #intermediate user
 #lns1 = ax1.plot(time, proposedi, color="navy",marker="p", markersize=7, label=r'sequential T-SIC')
@@ -173,8 +173,9 @@ for tick in ax1.get_yticklabels():
 ax1.set_ylim(-0.0,2e-1)  # most of the data
 ax1.set_xlim(1, 20.5)  # most of the data
 ax1.tick_params(axis='both', which='major', labelsize=11)
+plt.text(7,0.5e-2,'Received power ratio: 5',fontsize=13,fontname="Arial")
 #plt.text(1.5,200.0,'# emergency devices: 340',fontsize=13,fontname="Arial")
 #plt.text(1.5,255.0,'emergency duration: 30 mins',fontsize=13,fontname="Arial")
 plt.xlabel(r"Total number of transmitters",fontname="Arial",fontsize=14)
-plt.ylabel(r"Theoretical bit error rate (BER)",fontname="Arial",fontsize=14)
+plt.ylabel(r"Theoretical bit error rate ($BER_{th}$)",fontname="Arial",fontsize=14)
 plt.show()

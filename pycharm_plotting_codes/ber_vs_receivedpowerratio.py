@@ -128,8 +128,8 @@ for tick in ax1.get_yticklabels():
 ax1.set_ylim(-0.0,0.4)  # most of the data
 ax1.set_xlim(-0.2, 10.2)  # most of the data
 ax1.tick_params(axis='both', which='major', labelsize=11)
-plt.text(0.2,0.25e-3,'number of transmitters: 10',fontsize=13,fontname="Arial")
+plt.text(0.2,0.25e-3,'Number of transmitters ($K$): 10',fontsize=13,fontname="Arial")
 #plt.text(1.5,255.0,'emergency duration: 30 mins',fontsize=13,fontname="Arial")
-plt.xlabel(r"received power ratio",fontname="Arial",fontsize=14)
-plt.ylabel(r"Theoretical bit error rate (BER)",fontname="Arial",fontsize=14)
+plt.xlabel(r"Received power ratio",fontname="Arial",fontsize=14)
+plt.ylabel(r"Theoretical bit error rate ($BER_{th}$)",fontname="Arial",fontsize=14)
 plt.show()

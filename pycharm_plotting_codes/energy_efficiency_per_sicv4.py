@@ -119,9 +119,9 @@ ax1.grid(color='gray', alpha=0.5, linestyle='dashed', linewidth=0.5)
 
 #legend
 lns1 = ax1.plot(time, proposed1, color="black",marker=".", markersize=5, label=r'sequential T-SIC $I_{th}$=0.5 mW ')
-lns2 = ax1.plot(time, conv3,color="peru",marker=".",linestyle='dashed', markersize=5,  label=r'conv T-SIC $I_{th}$=0.5 mW' )
+#lns2 = ax1.plot(time, conv1,color="peru",marker=".",linestyle='dashed', markersize=5,  label=r'conv T-SIC $I_{th}$=0.5 mW' )
 lns5 = ax1.plot(time, prop3, color="black",marker="x", markersize=5, label=r'sequential T-SIC $I_{th}$= 1.2 mW')
-lns6= ax1.plot(time, conv1,color="peru",marker="x",linestyle='dashed', markersize=5,  label=r'conv T-SIC $I_{th}$ = 1.2 mW')
+lns6= ax1.plot(time, conv1,color="peru",marker="x",linestyle='dashed', markersize=5,  label=r'conv T-SIC')
 
 lns = lns5
       #+lns2
